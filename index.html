@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한방 처방·상병 통합 검색 시스템</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header class="app-header">
+        <div class="inner">
+            <div class="brand">
+                <span class="icon">⚕️</span>
+                <div class="brand-text">
+                    <h1>바를정 경방신약 상병명 리스트</h1>
+                    <p>Prescription & Disease Code System</p>
+                </div>
+            </div>
+            
+            <div class="search-wrapper">
+                <div class="search-field">
+                    <input type="text" id="searchInput" placeholder="처방명, 약재, 상병코드, 적응증 검색..." onkeypress="if(event.keyCode==13) handleSearch()">
+                    <button class="btn-primary" onclick="handleSearch()">검색</button>
+                </div>
+                <div class="quick-actions">
+                    <button class="btn-sub" onclick="showAll()">전체보기</button>
+                    <button class="btn-sub" onclick="goBack()">뒤로가기</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <div id="results"></div>
+        <div id="noResults" class="hidden">
+            <div class="empty-state">
+                <div class="empty-icon">🔍</div>
+                <h3>검색 결과가 없습니다</h3>
+                <p>입력하신 키워드를 확인하시거나 전체보기 버튼을 눌러주세요.</p>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="app-footer">
+        <p>&copy; 2026 Medical Data Management System. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
